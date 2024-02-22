@@ -99,6 +99,7 @@ elif(choice==2):
         if (choice == 1):
             print("----------------------------------------------------------------")
             print("Khalid Rehman Details")
+
             print("Name: Khalid Rehman \n FatherName: abdul Rehman \n contact: 03438765497 \n address: village partuk district ghanche gilgit baltistan")
 
     elif (choice == 103):

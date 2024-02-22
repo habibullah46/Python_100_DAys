@@ -6,7 +6,7 @@ url="https://webscraper.io/test-sites/e-commerce/allinone/computers/tablets"
 r= requests.get(url)
 print(r)
 soup=BeautifulSoup(r.text,"lxml")
-# # print(soup)
+print(soup)
 # price = soup.find("li",class_="wow fadeIn")
 # print(price.text)
 # des = soup.find_all("div",class_="short-description-checkshort")
