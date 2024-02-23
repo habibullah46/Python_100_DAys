@@ -5,7 +5,7 @@ url = "https://ticker.finology.in/"
 r = requests.get(url)
 # print(r.status_code)
 soup = BeautifulSoup(r.text,"lxml")
-# print(soup)
+print(soup)
 table = soup.find("table",class_="table table-sm table-hover screenertable")
 # print(table.text)
 header= table.find_all("th")
