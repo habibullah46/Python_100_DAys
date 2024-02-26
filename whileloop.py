@@ -12,18 +12,27 @@
 # print("You took",counter,"attempt")
 print("===================================================")
 print("\n\n\t\t\t\tStudent Details")
-total=int(input("Number of Student You Want To Add:"))
-i=1;
-while i <=total:
-    name=input("Enter Your Name:")
-    FatherName=input("Enter Your FatherName:")
-    Class=input("Enter Your Class:")
-    Roll_NO=int(input("Enter Your Roll No:"))
-    CGPA=float(input("Enter Your CGPA:"))
-    print("====================================================")
-    i+=1
-print("\n\n\t\t\t\tRegister Student Details")
-print("Name\t\t\tFatherName\t\t\tClass\t\t\tRollNo\t\t\tCGPA")
+total = int(input("Number of Students You Want To Add:"))
+students = []  # List to store details of all students
 
-for i in range(1,total):
-    print(name,"\t\t\t",FatherName,"\t\t\t",Class,"\t\t\t",Roll_NO,"\t\t\t",CGPA)
+i = 1
+while i <= total:
+    print(f"\nEnter details for Student {i}:")
+    name = input("Enter Your Name:")
+    FatherName = input("Enter Your Father's Name:")
+    Class = input("Enter Your Class:")
+    Roll_NO = int(input("Enter Your Roll No:"))
+    CGPA = float(input("Enter Your CGPA:"))
+    # Store details of each student in a tuple
+    student_details = (name, FatherName, Class, Roll_NO, CGPA)
+    # Append the tuple to the list of students
+    students.append(student_details)
+    print("====================================================")
+    i += 1
+
+print("\n\n\t\t\t\tRegistered Student Details")
+print("Name\t\t\tFather's Name\t\t\tClass\t\t\tRoll No\t\t\tCGPA")
+
+# Iterate over the list of students and print their details
+for student in students:
+    print(f"{student[0]}\t\t\t{student[1]}\t\t\t{student[2]}\t\t\t{student[3]}\t\t\t{student[4]}")
