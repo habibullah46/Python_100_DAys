@@ -1,15 +1,4 @@
-# import random
-# random.randint(20,30)
-# jackpot = random.randint(20,30)
-# guess = int(input("chal guess kar :"))
-# counter = 1
-# while guess !=jackpot:
-#     if guess < jackpot:
-#         print("Guess Lower")
-#     guess = int(input("Chal Guess kar"))
-#     counter +=1
-# print("Sahi Jawab")
-# print("You took",counter,"attempt")
+
 print("===================================================")
 print("\n\n\t\t\t\tStudent Details")
 total = int(input("Number of Students You Want To Add:"))
@@ -31,8 +20,16 @@ while i <= total:
     i += 1
 
 print("\n\n\t\t\t\tRegistered Student Details")
-print("Name\t\t\tFather's Name\t\t\tClass\t\t\tRoll No\t\t\tCGPA")
+print("Name\t\tFather's Name\t\tClass\t\t\tRoll No\t\t\tCGPA")
 
-# Iterate over the list of students and print their details
 for student in students:
-    print(f"{student[0]}\t\t\t{student[1]}\t\t\t{student[2]}\t\t\t{student[3]}\t\t\t{student[4]}")
+    print(f"{student[0]}\t\t{student[1]}\t\t\t{student[2]}\t\t\t\t{student[3]}\t\t\t\t{student[4]}")
+print("\n\n====================================================================================")
+user=int(input("Do You Want To Search Details:"))
+if(user == "y" or "Y"):
+    roll=int(input("Enter Student RollNo:"))
+    for roll in roll
+        print(f"{student[0]}\t\t{student[1]}\t\t\t{student[2]}\t\t\t\t{student[3]}\t\t\t\t{student[4]}")
+
+else:
+    print("Thanks for your Response")
